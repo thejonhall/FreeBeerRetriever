@@ -7,14 +7,28 @@
 //
 
 import UIKit
-import Kanna
+//import Kanna
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         NSLog("Something happened!!")
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let myURLString = "https://google.com"
+        
+        if let myURL = NSURL(string: myURLString) {
+            let myHTMLString: NSString?
+            do {
+                myHTMLString = try NSString(contentsOfURL: myURL, encoding: NSISOLatin1StringEncoding)
+            }
+            catch {
+                print(error)
+                myHTMLString = nil
+            }
+            
+            print("HTML : \(myHTMLString)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
