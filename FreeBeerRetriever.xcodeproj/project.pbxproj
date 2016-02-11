@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5A16D7F608E98943616AE8 /* Pods_FreeBeerRetriever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B52ABDA3B937BAF40193992 /* Pods_FreeBeerRetriever.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		995D32681C6C489000EF47A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D32671C6C489000EF47A3 /* AppDelegate.swift */; };
 		995D326A1C6C489000EF47A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D32691C6C489000EF47A3 /* ViewController.swift */; };
 		995D326D1C6C489000EF47A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995D326B1C6C489000EF47A3 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B52ABDA3B937BAF40193992 /* Pods_FreeBeerRetriever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeBeerRetriever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		995D32641C6C489000EF47A3 /* FreeBeerRetriever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeBeerRetriever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995D32671C6C489000EF47A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995D32691C6C489000EF47A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		995D32831C6C489000EF47A3 /* FreeBeerRetrieverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeBeerRetrieverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		995D32871C6C489000EF47A3 /* FreeBeerRetrieverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBeerRetrieverUITests.swift; sourceTree = "<group>"; };
 		995D32891C6C489000EF47A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B47B32160CC1C6CF8928AD /* Pods-FreeBeerRetriever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBeerRetriever.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever.release.xcconfig"; sourceTree = "<group>"; };
+		AB317AC6A6AAFF40D7879531 /* Pods-FreeBeerRetriever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBeerRetriever.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5A16D7F608E98943616AE8 /* Pods_FreeBeerRetriever.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FDD2C5B7C565CC3B2B7A53E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB317AC6A6AAFF40D7879531 /* Pods-FreeBeerRetriever.debug.xcconfig */,
+				A9B47B32160CC1C6CF8928AD /* Pods-FreeBeerRetriever.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		995D325B1C6C489000EF47A3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				995D327B1C6C489000EF47A3 /* FreeBeerRetrieverTests */,
 				995D32861C6C489000EF47A3 /* FreeBeerRetrieverUITests */,
 				995D32651C6C489000EF47A3 /* Products */,
+				8FDD2C5B7C565CC3B2B7A53E /* Pods */,
+				EDF315355F9318FCF522D0EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = FreeBeerRetrieverUITests;
 			sourceTree = "<group>";
 		};
+		EDF315355F9318FCF522D0EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B52ABDA3B937BAF40193992 /* Pods_FreeBeerRetriever.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 995D328C1C6C489000EF47A3 /* Build configuration list for PBXNativeTarget "FreeBeerRetriever" */;
 			buildPhases = (
+				AF8EE4D870E8A07442445849 /* Check Pods Manifest.lock */,
 				995D32601C6C489000EF47A3 /* Sources */,
 				995D32611C6C489000EF47A3 /* Frameworks */,
 				995D32621C6C489000EF47A3 /* Resources */,
+				4BAF3F06DD06A694A8CAA60C /* Embed Pods Frameworks */,
+				FD477AA1DB8375B5784D26C4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BAF3F06DD06A694A8CAA60C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF8EE4D870E8A07442445849 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD477AA1DB8375B5784D26C4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		995D32601C6C489000EF47A3 /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		995D328D1C6C489000EF47A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB317AC6A6AAFF40D7879531 /* Pods-FreeBeerRetriever.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeBeerRetriever/Info.plist;
@@ -408,6 +484,7 @@
 		};
 		995D328E1C6C489000EF47A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B47B32160CC1C6CF8928AD /* Pods-FreeBeerRetriever.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeBeerRetriever/Info.plist;
@@ -484,6 +561,7 @@
 				995D328E1C6C489000EF47A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		995D328F1C6C489000EF47A3 /* Build configuration list for PBXNativeTarget "FreeBeerRetrieverTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				995D32911C6C489000EF47A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		995D32921C6C489000EF47A3 /* Build configuration list for PBXNativeTarget "FreeBeerRetrieverUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				995D32941C6C489000EF47A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

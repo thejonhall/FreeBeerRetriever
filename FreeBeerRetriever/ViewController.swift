@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Kanna
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSLog("Something happened!!")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
