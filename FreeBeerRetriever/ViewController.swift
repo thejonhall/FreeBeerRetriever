@@ -1,33 +1,40 @@
-//
-//  ViewController.swift
-//  FreeBeerRetriever
-//
-//  Created by jon.hall on 2/10/16.
-//  Copyright © 2016 jon.hall. All rights reserved.
-//
-
 import UIKit
-//import Kanna
+import Kanna
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSLog("Something happened!!")
         
-        let myURLString = "https://google.com"
+        let htmlPath = NSString(string:"/Users/jon.hall/Desktop/captainKeith.txt").stringByExpandingTildeInPath
         
-        if let myURL = NSURL(string: myURLString) {
-            let myHTMLString: NSString?
-            do {
-                myHTMLString = try NSString(contentsOfURL: myURL, encoding: NSISOLatin1StringEncoding)
-            }
-            catch {
-                print(error)
-                myHTMLString = nil
+        do {
+           let fileContent = try NSString(contentsOfFile: htmlPath, encoding: NSUTF8StringEncoding)
+//            print ("fileContent : \(fileContent)")
+            
+            if let doc = Kanna.HTML(html: fileContent as String, encoding: NSUTF8StringEncoding) {
+                print(doc.title)
+
+                //                for question in doc.xpath("//span[@id=\"questions\"]") {
+                //                    let questionText = question.text! as String
+                //                    print(questionText)
+                    
+                    
+                    
+                    for possibleAnswer in doc.xpath("//input[@value='1']") {
+                        let questionText = possibleAnswer.xpath("../..").text
+                        let numberSeparatorIndex = questionText!.rangeOfString(".")?.startIndex
+                        let questionNumber = questionText!.substringToIndex(numberSeparatorIndex!)
+                        
+                        let rawAnswerText = possibleAnswer.xpath("..").text
+                        print("Answer to question number: \(questionNumber) : \(rawAnswerText)")
+                    }
             }
             
-            print("HTML : \(myHTMLString)")
+            
+            
+        } catch {
+            print(error)
         }
     }
 
