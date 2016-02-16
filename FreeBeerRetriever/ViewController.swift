@@ -13,26 +13,18 @@ class ViewController: UIViewController {
 //            print ("fileContent : \(fileContent)")
             
             if let doc = Kanna.HTML(html: fileContent as String, encoding: NSUTF8StringEncoding) {
-                print(doc.title)
-
-                //                for question in doc.xpath("//span[@id=\"questions\"]") {
-                //                    let questionText = question.text! as String
-                //                    print(questionText)
-                    
-                    
-                    
                     for possibleAnswer in doc.xpath("//input[@value='1']") {
                         let questionText = possibleAnswer.xpath("../..").text
                         let numberSeparatorIndex = questionText!.rangeOfString(".")?.startIndex
                         let questionNumber = questionText!.substringToIndex(numberSeparatorIndex!)
                         
-                        let rawAnswerText = possibleAnswer.xpath("..").text
-                        print("Answer to question number: \(questionNumber) : \(rawAnswerText)")
+                        let rawAnswerText: String = possibleAnswer.xpath("..").text!
+                        var cleanedUpAnswerText = rawAnswerText.stringByReplacingOccurrencesOfString("\t", withString: "")
+                        cleanedUpAnswerText = cleanedUpAnswerText.stringByReplacingOccurrencesOfString("\n", withString: "")
+                        cleanedUpAnswerText = cleanedUpAnswerText.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                        print("Question \(questionNumber) Answer : \(cleanedUpAnswerText)")
                     }
             }
-            
-            
-            
         } catch {
             print(error)
         }
