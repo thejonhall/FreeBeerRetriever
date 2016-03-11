@@ -47,23 +47,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func condenseWhitespace(inputString : String) -> String {
+        let components = inputString.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        return components.filter { !$0.isEmpty }.joinWithSeparator(" ")
+    }
+    
     func parseQuizAnswersFromSourceString(sourceString : NSString) {
-            //            print ("fileContent : \(fileContent)")
-            
-            if let doc = Kanna.HTML(html: sourceString as String, encoding: NSUTF8StringEncoding) {
-                for possibleAnswer in doc.xpath("//input[@value='1']") {
-                    let questionText = possibleAnswer.xpath("../..").text
-                    let numberSeparatorIndex = questionText!.rangeOfString(".")?.startIndex
-                    let questionNumber = questionText!.substringToIndex(numberSeparatorIndex!)
-                    
-                    let rawAnswerText: String = possibleAnswer.xpath("..").text!
-                    var cleanedUpAnswerText = rawAnswerText.stringByReplacingOccurrencesOfString("\t", withString: "")
-                    cleanedUpAnswerText = cleanedUpAnswerText.stringByReplacingOccurrencesOfString("\n", withString: "")
-                    cleanedUpAnswerText = cleanedUpAnswerText.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-                    print("Question \(questionNumber) Answer : \(cleanedUpAnswerText)")
-                }
+        //            print ("fileContent : \(fileContent)")
+        
+        if let doc = Kanna.HTML(html: sourceString as String, encoding: NSUTF8StringEncoding) {
+            for possibleAnswer in doc.xpath("//input[@value='1']") {
+                let questionText = possibleAnswer.xpath("../..").text
+                let numberSeparatorIndex = questionText!.rangeOfString(".")?.startIndex
+                let questionNumber = questionText!.substringToIndex(numberSeparatorIndex!)
+                
+                let rawAnswerText: String = possibleAnswer.xpath("..").text!
+                var cleanedUpAnswerText = rawAnswerText.stringByReplacingOccurrencesOfString("\t", withString: "")
+                cleanedUpAnswerText = cleanedUpAnswerText.stringByReplacingOccurrencesOfString("\n", withString: "")
+                cleanedUpAnswerText = condenseWhitespace(cleanedUpAnswerText)
+                print("Question \(questionNumber) Answer : \(cleanedUpAnswerText)")
             }
+        }
         
     }
 }
