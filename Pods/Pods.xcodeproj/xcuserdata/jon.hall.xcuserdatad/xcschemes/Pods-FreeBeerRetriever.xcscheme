@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "379EC1DCA2DD6B52D310A1CA"
+               BlueprintIdentifier = "0FF4A708D8B0FAA5264E7C83"
                BuildableName = "Pods_FreeBeerRetriever.framework"
                BlueprintName = "Pods-FreeBeerRetriever"
                ReferencedContainer = "container:Pods.xcodeproj">

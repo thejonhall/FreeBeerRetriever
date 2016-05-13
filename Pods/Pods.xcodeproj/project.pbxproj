@@ -1,520 +1,1235 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0FBFBA8EA5E30C8E39225DAC /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3714AD7DE39F55F783C5FB /* libxmlParserOption.swift */; };
-		25FC35D9EC89945996EFF101 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0F1041437777EB841BF55 /* CSS.swift */; };
-		51624D28B57FA71A7FA3A51B /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FCEE184E6E16195CAD33C /* libxmlHTMLNode.swift */; };
-		5A47194C7C87A6CDC960FA06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F182B4577084FAF1C830F5A /* Foundation.framework */; };
-		5D30A3EB0E359498F3E22CA9 /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB6BB585F2E88C717549C1F /* Kanna.swift */; };
-		9554B89F5CC9E6B8A8F81ACA /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF967A42F8A88C6EF4DF9C92 /* libxmlHTMLDocument.swift */; };
-		B41C36C0022D977DC8B41D8D /* Pods-FreeBeerRetriever-Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4A38023FE366478737596 /* Pods-FreeBeerRetriever-Kanna-dummy.m */; };
-		BD599F9546E909F6D7E3A4A2 /* Pods-FreeBeerRetriever-Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3B2CEF3AF54371DCDA5B02 /* Pods-FreeBeerRetriever-Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB871D82D4B706FDCFFA1136 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F182B4577084FAF1C830F5A /* Foundation.framework */; };
-		EE35F65D79E1E64F5D218D0A /* Pods-FreeBeerRetriever-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA0C0C74F67573B603A662A /* Pods-FreeBeerRetriever-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9EDD46D7C9FF45918B7B150 /* Pods-FreeBeerRetriever-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C874895BC8762196884A1C9 /* Pods-FreeBeerRetriever-dummy.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		53D6463D1444D65346B2CF7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E0105201EA5B56548379CAFA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9826C135C781AA89B2528F7F;
-			remoteInfo = "Pods-FreeBeerRetriever-Kanna";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0441C45B9814DBD135558107 /* Pods-FreeBeerRetriever-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreeBeerRetriever-acknowledgements.plist"; sourceTree = "<group>"; };
-		0912EDE0472D8C3DF86CC751 /* Pods-FreeBeerRetriever-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeBeerRetriever-resources.sh"; sourceTree = "<group>"; };
-		10CCE439363401ADC841A979 /* Pods_FreeBeerRetriever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeBeerRetriever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11DC93DBF38E60492B9129DF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		17F6619499AD1CE8408D2BCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33CC6A265A8BA404A432C721 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BA0F1041437777EB841BF55 /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Source/CSS.swift; sourceTree = "<group>"; };
-		50F0A7684D634E730CF9A8FC /* Pods-FreeBeerRetriever-Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FreeBeerRetriever-Kanna.modulemap"; sourceTree = "<group>"; };
-		64FF63FF69457A590DE9B910 /* Pods-FreeBeerRetriever-Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeBeerRetriever-Kanna-prefix.pch"; sourceTree = "<group>"; };
-		6B3B2CEF3AF54371DCDA5B02 /* Pods-FreeBeerRetriever-Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeBeerRetriever-Kanna-umbrella.h"; sourceTree = "<group>"; };
-		6F182B4577084FAF1C830F5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6FB6BB585F2E88C717549C1F /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Source/Kanna.swift; sourceTree = "<group>"; };
-		7017F79DA9E5A3328E6D5894 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C874895BC8762196884A1C9 /* Pods-FreeBeerRetriever-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreeBeerRetriever-dummy.m"; sourceTree = "<group>"; };
-		A955C1AE444E2FEC7FEF62B3 /* Pods-FreeBeerRetriever.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FreeBeerRetriever.modulemap"; sourceTree = "<group>"; };
-		AE3714AD7DE39F55F783C5FB /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Source/libxml/libxmlParserOption.swift; sourceTree = "<group>"; };
-		AF967A42F8A88C6EF4DF9C92 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Source/libxml/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
-		B9638E59B7E2DD72D2ED6D42 /* Pods-FreeBeerRetriever-Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeBeerRetriever-Kanna.xcconfig"; sourceTree = "<group>"; };
-		BBA0C0C74F67573B603A662A /* Pods-FreeBeerRetriever-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeBeerRetriever-umbrella.h"; sourceTree = "<group>"; };
-		BFD62B60FB73CE3A2B90E20A /* Pods-FreeBeerRetriever-Kanna-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeBeerRetriever-Kanna-Private.xcconfig"; sourceTree = "<group>"; };
-		DA2FCEE184E6E16195CAD33C /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Source/libxml/libxmlHTMLNode.swift; sourceTree = "<group>"; };
-		E04CED6B28E81DCFE29ECF94 /* Pods-FreeBeerRetriever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeBeerRetriever.debug.xcconfig"; sourceTree = "<group>"; };
-		E84C3280EB2310B04F34D35D /* Pods-FreeBeerRetriever-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeBeerRetriever-frameworks.sh"; sourceTree = "<group>"; };
-		ED1C707E8A12C5264070076A /* Pods-FreeBeerRetriever-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeBeerRetriever-environment.h"; sourceTree = "<group>"; };
-		EFC4A38023FE366478737596 /* Pods-FreeBeerRetriever-Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreeBeerRetriever-Kanna-dummy.m"; sourceTree = "<group>"; };
-		F1B8D8B69819F6968086341D /* Pods-FreeBeerRetriever-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreeBeerRetriever-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F71B1D42B153F3AF08999715 /* Pods-FreeBeerRetriever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeBeerRetriever.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		68BF2C06DE860FE7ED3CB24A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB871D82D4B706FDCFFA1136 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3B1703BEB667225DE6B1DAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A47194C7C87A6CDC960FA06 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		065D4F985A79DCB3DC060FE4 /* Pods-FreeBeerRetriever */ = {
-			isa = PBXGroup;
-			children = (
-				7017F79DA9E5A3328E6D5894 /* Info.plist */,
-				A955C1AE444E2FEC7FEF62B3 /* Pods-FreeBeerRetriever.modulemap */,
-				F1B8D8B69819F6968086341D /* Pods-FreeBeerRetriever-acknowledgements.markdown */,
-				0441C45B9814DBD135558107 /* Pods-FreeBeerRetriever-acknowledgements.plist */,
-				8C874895BC8762196884A1C9 /* Pods-FreeBeerRetriever-dummy.m */,
-				ED1C707E8A12C5264070076A /* Pods-FreeBeerRetriever-environment.h */,
-				E84C3280EB2310B04F34D35D /* Pods-FreeBeerRetriever-frameworks.sh */,
-				0912EDE0472D8C3DF86CC751 /* Pods-FreeBeerRetriever-resources.sh */,
-				BBA0C0C74F67573B603A662A /* Pods-FreeBeerRetriever-umbrella.h */,
-				E04CED6B28E81DCFE29ECF94 /* Pods-FreeBeerRetriever.debug.xcconfig */,
-				F71B1D42B153F3AF08999715 /* Pods-FreeBeerRetriever.release.xcconfig */,
-			);
-			name = "Pods-FreeBeerRetriever";
-			path = "Target Support Files/Pods-FreeBeerRetriever";
-			sourceTree = "<group>";
-		};
-		307E9AF2DC6DFD6ED3546418 = {
-			isa = PBXGroup;
-			children = (
-				11DC93DBF38E60492B9129DF /* Podfile */,
-				7323B6D89D7A9EA4348FF3C0 /* Frameworks */,
-				89895FBC38D43D6C7FBF84EC /* Pods */,
-				6CD15B777C9B4D0A73377713 /* Products */,
-				5EA16FCD7957393288920B96 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		318BF918F009AF9DD18919D0 /* Kanna */ = {
-			isa = PBXGroup;
-			children = (
-				3BA0F1041437777EB841BF55 /* CSS.swift */,
-				6FB6BB585F2E88C717549C1F /* Kanna.swift */,
-				AF967A42F8A88C6EF4DF9C92 /* libxmlHTMLDocument.swift */,
-				DA2FCEE184E6E16195CAD33C /* libxmlHTMLNode.swift */,
-				AE3714AD7DE39F55F783C5FB /* libxmlParserOption.swift */,
-				C5186D3AF65813A4A05797E5 /* Support Files */,
-			);
-			path = Kanna;
-			sourceTree = "<group>";
-		};
-		5EA16FCD7957393288920B96 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				065D4F985A79DCB3DC060FE4 /* Pods-FreeBeerRetriever */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6CD15B777C9B4D0A73377713 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				33CC6A265A8BA404A432C721 /* Kanna.framework */,
-				10CCE439363401ADC841A979 /* Pods_FreeBeerRetriever.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7323B6D89D7A9EA4348FF3C0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				94F0FA835DB015CD53BF16B0 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		89895FBC38D43D6C7FBF84EC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				318BF918F009AF9DD18919D0 /* Kanna */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		94F0FA835DB015CD53BF16B0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6F182B4577084FAF1C830F5A /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C5186D3AF65813A4A05797E5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				17F6619499AD1CE8408D2BCF /* Info.plist */,
-				50F0A7684D634E730CF9A8FC /* Pods-FreeBeerRetriever-Kanna.modulemap */,
-				B9638E59B7E2DD72D2ED6D42 /* Pods-FreeBeerRetriever-Kanna.xcconfig */,
-				BFD62B60FB73CE3A2B90E20A /* Pods-FreeBeerRetriever-Kanna-Private.xcconfig */,
-				EFC4A38023FE366478737596 /* Pods-FreeBeerRetriever-Kanna-dummy.m */,
-				64FF63FF69457A590DE9B910 /* Pods-FreeBeerRetriever-Kanna-prefix.pch */,
-				6B3B2CEF3AF54371DCDA5B02 /* Pods-FreeBeerRetriever-Kanna-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-FreeBeerRetriever-Kanna";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		B9B769B76E1F88758BA6AD23 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD599F9546E909F6D7E3A4A2 /* Pods-FreeBeerRetriever-Kanna-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDFDF990572A640C83BEC8A5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE35F65D79E1E64F5D218D0A /* Pods-FreeBeerRetriever-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		379EC1DCA2DD6B52D310A1CA /* Pods-FreeBeerRetriever */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 15B536C535F7044F4B09DCBA /* Build configuration list for PBXNativeTarget "Pods-FreeBeerRetriever" */;
-			buildPhases = (
-				8DB48E8829D9BBEE0754589B /* Sources */,
-				68BF2C06DE860FE7ED3CB24A /* Frameworks */,
-				CDFDF990572A640C83BEC8A5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8D65D94AE2AB697F012D88C1 /* PBXTargetDependency */,
-			);
-			name = "Pods-FreeBeerRetriever";
-			productName = "Pods-FreeBeerRetriever";
-			productReference = 10CCE439363401ADC841A979 /* Pods_FreeBeerRetriever.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9826C135C781AA89B2528F7F /* Pods-FreeBeerRetriever-Kanna */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6B9DEDAC8CD6BAE26FC00BD5 /* Build configuration list for PBXNativeTarget "Pods-FreeBeerRetriever-Kanna" */;
-			buildPhases = (
-				DCE9DEF86DA719ED640B5EC1 /* Sources */,
-				D3B1703BEB667225DE6B1DAD /* Frameworks */,
-				B9B769B76E1F88758BA6AD23 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-FreeBeerRetriever-Kanna";
-			productName = "Pods-FreeBeerRetriever-Kanna";
-			productReference = 33CC6A265A8BA404A432C721 /* Kanna.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		E0105201EA5B56548379CAFA /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0640;
-			};
-			buildConfigurationList = 238C1E5726C9C08EC71FD82F /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 307E9AF2DC6DFD6ED3546418;
-			productRefGroup = 6CD15B777C9B4D0A73377713 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				379EC1DCA2DD6B52D310A1CA /* Pods-FreeBeerRetriever */,
-				9826C135C781AA89B2528F7F /* Pods-FreeBeerRetriever-Kanna */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		8DB48E8829D9BBEE0754589B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F9EDD46D7C9FF45918B7B150 /* Pods-FreeBeerRetriever-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCE9DEF86DA719ED640B5EC1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25FC35D9EC89945996EFF101 /* CSS.swift in Sources */,
-				5D30A3EB0E359498F3E22CA9 /* Kanna.swift in Sources */,
-				B41C36C0022D977DC8B41D8D /* Pods-FreeBeerRetriever-Kanna-dummy.m in Sources */,
-				9554B89F5CC9E6B8A8F81ACA /* libxmlHTMLDocument.swift in Sources */,
-				51624D28B57FA71A7FA3A51B /* libxmlHTMLNode.swift in Sources */,
-				0FBFBA8EA5E30C8E39225DAC /* libxmlParserOption.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8D65D94AE2AB697F012D88C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FreeBeerRetriever-Kanna";
-			target = 9826C135C781AA89B2528F7F /* Pods-FreeBeerRetriever-Kanna */;
-			targetProxy = 53D6463D1444D65346B2CF7F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		02BA6BD3BCACA5452513F36D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		1EDCF89A0CF078990A9AAF0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFD62B60FB73CE3A2B90E20A /* Pods-FreeBeerRetriever-Kanna-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-FreeBeerRetriever-Kanna/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Kanna;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		23CA729EFF665D0C90CD6147 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F71B1D42B153F3AF08999715 /* Pods-FreeBeerRetriever.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FreeBeerRetriever/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_FreeBeerRetriever;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3720B68C2F418952859D0295 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3A55FDE71CB06495337C8766 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E04CED6B28E81DCFE29ECF94 /* Pods-FreeBeerRetriever.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FreeBeerRetriever/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_FreeBeerRetriever;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F6FB0A89A58B4190E4662BED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFD62B60FB73CE3A2B90E20A /* Pods-FreeBeerRetriever-Kanna-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-FreeBeerRetriever-Kanna/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Kanna;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		15B536C535F7044F4B09DCBA /* Build configuration list for PBXNativeTarget "Pods-FreeBeerRetriever" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A55FDE71CB06495337C8766 /* Debug */,
-				23CA729EFF665D0C90CD6147 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		238C1E5726C9C08EC71FD82F /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				02BA6BD3BCACA5452513F36D /* Debug */,
-				3720B68C2F418952859D0295 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6B9DEDAC8CD6BAE26FC00BD5 /* Build configuration list for PBXNativeTarget "Pods-FreeBeerRetriever-Kanna" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EDCF89A0CF078990A9AAF0A /* Debug */,
-				F6FB0A89A58B4190E4662BED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = E0105201EA5B56548379CAFA /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>032B94B9CBDBC307AB816361</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D1638384D4194207FB06D719</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0B8E6B1B9F9E051F0B57EC2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>0BA464B97CCFD7DC1F6629D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Kanna.swift</string>
+			<key>path</key>
+			<string>Sources/Kanna.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0FF4A708D8B0FAA5264E7C83</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>62022E25FAEF428182EE60CF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CD3456FC601846C8077CAB71</string>
+				<string>4CD3B2E15EC360110A779599</string>
+				<string>6126AAC388D9162C84285128</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2430931DB14CDD194C5361C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FreeBeerRetriever</string>
+			<key>productName</key>
+			<string>Pods-FreeBeerRetriever</string>
+			<key>productReference</key>
+			<string>2F11034D27B32DDB60642825</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>111A63FD7AEE73C1CA5B7023</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2430931DB14CDD194C5361C9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-FreeBeerRetriever-Kanna</string>
+			<key>target</key>
+			<string>594602BC119B3759427D9A76</string>
+			<key>targetProxy</key>
+			<string>DAA3E604490286DE67633D5D</string>
+		</dict>
+		<key>2E57A280BCF5E40C405D4F41</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F11034D27B32DDB60642825</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_FreeBeerRetriever.framework</string>
+			<key>path</key>
+			<string>Pods_FreeBeerRetriever.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3780ED0D226AF241C2721725</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Kanna.framework</string>
+			<key>path</key>
+			<string>Kanna.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>37E3E8218B64CC3EF77978BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>CSS.swift</string>
+			<key>path</key>
+			<string>Sources/CSS.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BDC543789856AD347F4D799</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEEC6B76BBF8F97B0CF9B5B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>471484D21A701CF778139DDE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47EDB478D6FF1DA4495A3F61</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EC2C087D1BE65B588406B5A5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever-Kanna/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Kanna</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4CD3B2E15EC360110A779599</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7F82766B2ACA8759CA245327</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D872F8254375DBD702D7AD3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A583B46559450FCDF5D5F92B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52399DB63EC91FA457F3C8DF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7BA71D3FF421B2DF0C322051</string>
+				<string>810A914FB9501714D8063ABB</string>
+				<string>CA1C7F190047D034F475BBC3</string>
+				<string>CBEEA2206574B9A7204B5A5F</string>
+				<string>4D872F8254375DBD702D7AD3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>542D4100E0F29173EF028280</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>576FC0C9B9F5FBF4BA89FF68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-Kanna-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>594602BC119B3759427D9A76</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C97EFDDE185D1F9048684CFD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D0B0D131A506C1E0F7947617</string>
+				<string>032B94B9CBDBC307AB816361</string>
+				<string>EC47F009F6B44E365597A411</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FreeBeerRetriever-Kanna</string>
+			<key>productName</key>
+			<string>Pods-FreeBeerRetriever-Kanna</string>
+			<key>productReference</key>
+			<string>3780ED0D226AF241C2721725</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>5C1D0F6930AFB7EFFE0EA79E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5DBDF37D00DF70BF5C18B9A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6126AAC388D9162C84285128</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9EF6FAE108BF472A56583CB7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>61B24AF38D9FEB1968F07D88</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0BA464B97CCFD7DC1F6629D9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>62022E25FAEF428182EE60CF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>72BB3009FBD5E44D47A82241</string>
+				<string>F913E616D813A8E976332A02</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>64948E2E86DC002A736D8A19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-Kanna.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6A1B29D6D8E8AD17DB75DE5D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EC2C087D1BE65B588406B5A5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever-Kanna/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever-Kanna/Pods-FreeBeerRetriever-Kanna.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>Kanna</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6E73A517DC1615687EE40BF3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>71CF80F1722F9F889E03D59E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8AE15E95ADEF064A4D4FCD69</string>
+				<string>96172235B6D5B9AB8FBD323A</string>
+				<string>64948E2E86DC002A736D8A19</string>
+				<string>EC2C087D1BE65B588406B5A5</string>
+				<string>576FC0C9B9F5FBF4BA89FF68</string>
+				<string>951CC12A45C18E8ABE7F0156</string>
+				<string>9E637DD9B1E77721EF63BFAF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-FreeBeerRetriever-Kanna</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>72BB3009FBD5E44D47A82241</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>111A63FD7AEE73C1CA5B7023</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FreeBeerRetriever</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7BA71D3FF421B2DF0C322051</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>7E8F6E5B25AE9AA831BE6517</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>libxmlParserOption.swift</string>
+			<key>path</key>
+			<string>Sources/libxmlParserOption.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F82766B2ACA8759CA245327</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B8E6B1B9F9E051F0B57EC2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>810A914FB9501714D8063ABB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AFA56B4085E70B46DCC62C7E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82CBBF85D000AC44D5F67369</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8603FBB2BE7DA2F9199E495A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>892AD667358EA3F6EBDA63B0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C58819616BC5427C3B9A5343</string>
+				<string>B6E4EBEAD790664DF283B77B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>895FA9A7B6DB37561BB674DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5C1D0F6930AFB7EFFE0EA79E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8AE15E95ADEF064A4D4FCD69</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>931BD21358D8565ED03BAA3D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>libxmlHTMLNode.swift</string>
+			<key>path</key>
+			<string>Sources/libxmlHTMLNode.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>951CC12A45C18E8ABE7F0156</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-Kanna-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9570EA032A923A0205B9CCD7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E637DD9B1E77721EF63BFAF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>96172235B6D5B9AB8FBD323A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-Kanna.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E4B914F70EDA4188F1FFAB9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>576FC0C9B9F5FBF4BA89FF68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E637DD9B1E77721EF63BFAF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-Kanna-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EF6FAE108BF472A56583CB7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A30E03768AD1E0B4FA111926</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A30E03768AD1E0B4FA111926</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A583B46559450FCDF5D5F92B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2E57A280BCF5E40C405D4F41</string>
+				<string>82CBBF85D000AC44D5F67369</string>
+				<string>B3809B281F41980340418713</string>
+				<string>471484D21A701CF778139DDE</string>
+				<string>5C1D0F6930AFB7EFFE0EA79E</string>
+				<string>542D4100E0F29173EF028280</string>
+				<string>5DBDF37D00DF70BF5C18B9A5</string>
+				<string>8603FBB2BE7DA2F9199E495A</string>
+				<string>A30E03768AD1E0B4FA111926</string>
+				<string>111A63FD7AEE73C1CA5B7023</string>
+				<string>6E73A517DC1615687EE40BF3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-FreeBeerRetriever</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-FreeBeerRetriever</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFA56B4085E70B46DCC62C7E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0B8E6B1B9F9E051F0B57EC2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3809B281F41980340418713</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6E4EBEAD790664DF283B77B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B78AEB63215E212B501F4A16</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0640</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>892AD667358EA3F6EBDA63B0</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>52399DB63EC91FA457F3C8DF</string>
+			<key>productRefGroup</key>
+			<string>CBEEA2206574B9A7204B5A5F</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>0FF4A708D8B0FAA5264E7C83</string>
+				<string>594602BC119B3759427D9A76</string>
+			</array>
+		</dict>
+		<key>C58819616BC5427C3B9A5343</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C97EFDDE185D1F9048684CFD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>47EDB478D6FF1DA4495A3F61</string>
+				<string>6A1B29D6D8E8AD17DB75DE5D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CA1C7F190047D034F475BBC3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F4CCAF9FC6DB3CC2793077FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CBEEA2206574B9A7204B5A5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3780ED0D226AF241C2721725</string>
+				<string>2F11034D27B32DDB60642825</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD3456FC601846C8077CAB71</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>895FA9A7B6DB37561BB674DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D0B0D131A506C1E0F7947617</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FF3B25896BDBE795A0F2F96E</string>
+				<string>61B24AF38D9FEB1968F07D88</string>
+				<string>9E4B914F70EDA4188F1FFAB9</string>
+				<string>3BDC543789856AD347F4D799</string>
+				<string>D10F08667DD738F2CFFD0BB8</string>
+				<string>F11418C9E32083B0B5650142</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D10F08667DD738F2CFFD0BB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>931BD21358D8565ED03BAA3D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D1638384D4194207FB06D719</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B8E6B1B9F9E051F0B57EC2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAA3E604490286DE67633D5D</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B78AEB63215E212B501F4A16</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>594602BC119B3759427D9A76</string>
+			<key>remoteInfo</key>
+			<string>Pods-FreeBeerRetriever-Kanna</string>
+		</dict>
+		<key>DEEC6B76BBF8F97B0CF9B5B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>libxmlHTMLDocument.swift</string>
+			<key>path</key>
+			<string>Sources/libxmlHTMLDocument.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC2C087D1BE65B588406B5A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FreeBeerRetriever-Kanna-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC47F009F6B44E365597A411</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9570EA032A923A0205B9CCD7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F11418C9E32083B0B5650142</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7E8F6E5B25AE9AA831BE6517</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F4CCAF9FC6DB3CC2793077FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>37E3E8218B64CC3EF77978BB</string>
+				<string>0BA464B97CCFD7DC1F6629D9</string>
+				<string>DEEC6B76BBF8F97B0CF9B5B0</string>
+				<string>931BD21358D8565ED03BAA3D</string>
+				<string>7E8F6E5B25AE9AA831BE6517</string>
+				<string>71CF80F1722F9F889E03D59E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Kanna</string>
+			<key>path</key>
+			<string>Kanna</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F913E616D813A8E976332A02</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6E73A517DC1615687EE40BF3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-FreeBeerRetriever/Pods-FreeBeerRetriever.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_FreeBeerRetriever</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FF3B25896BDBE795A0F2F96E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>37E3E8218B64CC3EF77978BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>B78AEB63215E212B501F4A16</string>
+</dict>
+</plist>
