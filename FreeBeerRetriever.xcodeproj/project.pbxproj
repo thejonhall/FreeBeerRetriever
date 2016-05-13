@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B5A16D7F608E98943616AE8 /* Pods_FreeBeerRetriever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B52ABDA3B937BAF40193992 /* Pods_FreeBeerRetriever.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9931ECDF1CE5621400F37113 /* BeerRetrieverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9931ECDE1CE5621400F37113 /* BeerRetrieverModel.swift */; };
 		995D32681C6C489000EF47A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D32671C6C489000EF47A3 /* AppDelegate.swift */; };
 		995D326A1C6C489000EF47A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D32691C6C489000EF47A3 /* ViewController.swift */; };
 		995D326D1C6C489000EF47A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995D326B1C6C489000EF47A3 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1B52ABDA3B937BAF40193992 /* Pods_FreeBeerRetriever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeBeerRetriever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9931ECDE1CE5621400F37113 /* BeerRetrieverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerRetrieverModel.swift; sourceTree = "<group>"; };
 		995D32641C6C489000EF47A3 /* FreeBeerRetriever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeBeerRetriever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995D32671C6C489000EF47A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995D32691C6C489000EF47A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				995D326E1C6C489000EF47A3 /* Assets.xcassets */,
 				995D32701C6C489000EF47A3 /* LaunchScreen.storyboard */,
 				995D32731C6C489000EF47A3 /* Info.plist */,
+				9931ECDE1CE5621400F37113 /* BeerRetrieverModel.swift */,
 			);
 			path = FreeBeerRetriever;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				TargetAttributes = {
 					995D32631C6C489000EF47A3 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HKUV32QBMS;
 					};
 					995D32771C6C489000EF47A3 = {
 						CreatedOnToolsVersion = 7.2;
@@ -333,6 +337,7 @@
 			files = (
 				995D326A1C6C489000EF47A3 /* ViewController.swift in Sources */,
 				995D32681C6C489000EF47A3 /* AppDelegate.swift in Sources */,
+				9931ECDF1CE5621400F37113 /* BeerRetrieverModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +480,9 @@
 			baseConfigurationReference = AB317AC6A6AAFF40D7879531 /* Pods-FreeBeerRetriever.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FreeBeerRetriever/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jon.FreeBeerRetriever;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,7 +494,9 @@
 			baseConfigurationReference = A9B47B32160CC1C6CF8928AD /* Pods-FreeBeerRetriever.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FreeBeerRetriever/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jon.FreeBeerRetriever;
 				PRODUCT_NAME = "$(TARGET_NAME)";
