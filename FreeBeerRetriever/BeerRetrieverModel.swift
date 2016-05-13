@@ -9,8 +9,7 @@ struct AnsweredQuestion {
 
 
 class BeerRetrieverModel {
-    func parseQuizAnswersFromSourceString(sourceString: String) -> [AnsweredQuestion] {
-        //            print ("fileContent : \(fileContent)")
+    func parseQuizAnswersFromSourceString(sourceString: NSString) -> [AnsweredQuestion] {
         var answers = [AnsweredQuestion]()
         
         if let doc = Kanna.HTML(html: sourceString as String, encoding: NSUTF8StringEncoding) {
@@ -32,6 +31,33 @@ class BeerRetrieverModel {
         
         return answers
     }
+    
+    func retrieveSourceCodeFromBeerquizSite() -> NSString {
+        var responseString: String = ""
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://www.saucerknurd.com/glassnite/quiz/")!)
+        request.HTTPMethod = "POST"
+        let postString = "email=thejonhall@gmail.com&UFO=00191&homestore=39"
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            responseString = String(data: data!, encoding: NSUTF8StringEncoding)!
+            print("responseString = \(responseString)")
+            
+        }
+        task.resume()
+        
+        return responseString
+    }
+    
     
     func condenseWhitespace(inputString : String) -> String {
         let components = inputString.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
